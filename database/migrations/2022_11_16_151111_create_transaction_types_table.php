@@ -17,7 +17,7 @@ class CreateTransactionTypesTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('code');
-            $table->enum('action', ['cr', 'cd']);
+            $table->enum('action', ['cr', 'dr']);
             $table->string('thumbnail')->nullable();
             $table->softDeletes();
             $table->timestamps();
